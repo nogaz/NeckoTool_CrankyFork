@@ -1,0 +1,49 @@
+{
+  "name": "neckotool",
+  "productName": "NeckoTool",
+  "version": "1.0.0",
+  "icon": "/icon.ico",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron . ",
+    "build": "electron-packager . neckotool --all --icon 'icon.ico'"
+  },
+  "build": {
+    "appId": "Calculator",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "files": [
+        "/icon.ico"
+      ],
+      "icon": "/icon.ico",
+      "requestedExecutionLevel": "requireAdministrator",
+      "allowToChangeInstallationDirectory": true
+    },
+    "nsis": {
+      "installerIcon": "/icon.ico",
+      "uninstallerIcon": "/icon.ico",
+      "uninstallDisplayName": "Necko installer"
+    }
+  },
+  "author": "Necko Github",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.5"
+  },
+  "directories": {
+    "buildResources": "resources",
+    "output": "release"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.7",
+    "electron-alert": "^0.1.16",
+    "electron-builder": "^22.11.7",
+    "electron-forge": "^5.2.4",
+    "electron-json-storage": "^4.5.0",
+    "electron-packager": "^15.3.0",
+    "geomicons-open": "^3.0.0-beta.1",
+    "sweetalert": "^2.1.2"
+  }
+}
