@@ -5,7 +5,7 @@ this is a tool for your flightsimulator to calculate the top of descent or do mo
 
 Download the latest release [here](https://github.com/prncAzula/NeckoTool/releases/download/v1.0.1_PUBLIC/Necko.Aviation.Tool.zip)
 <br>
-You can see the changelog [here!](https://github.com/prncAzula/NeckoTool/releases/v1.0.1_PUBLIC)
+The changelog can be found [here!](https://github.com/prncAzula/NeckoTool/releases/v1.0.1_PUBLIC)
 
 ## How to use 
 
