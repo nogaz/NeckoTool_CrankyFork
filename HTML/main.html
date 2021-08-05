@@ -3,18 +3,30 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>NeckoTool 1.0.0</title>
+    <title>NeckoTool 1.0.1</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 <style>
 html {
     background-color: #090C10;
+    font-family: 'Lato';
 }
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #span {
+  position: absolute;
     color: white;
     font-weight: bold;
     font-family: 'Lato';
     font-size: 30px;
-    margin-left: 33%;
+    max-width: 100%;
+    float: right;
+    margin-left: 60%;
+    margin-top: 5px;
 }
 ::selection{
   background-color: #4B54D1;
@@ -103,15 +115,15 @@ li {
   background-color: #484297;
   border: 2px solid #302c66;
   border-top:23px outset #4b54d1;
-border-right:23px solid #4b54d1;
-border-bottom:23px solid #4b54d1;
-border-left:23px solid #4b54d1;
-border-width:23px 23px 23px 23px;
-border-style:outset solid solid solid;
-border-color:#4b54d1 #4b54d1 #4b54d1 #4b54d1;
+  border-right:23px solid #4b54d1;
+  border-bottom:23px solid #4b54d1;
+  border-left:23px solid #4b54d1;
+  border-width:23px 23px 23px 23px;
+  border-style:outset solid solid solid;
+  border-color:#4b54d1 #4b54d1 #4b54d1 #4b54d1;
   display: block;
   position: relative;
-  left: 46%;
+  left: 50%;
   top: 50%;
   z-index: 59;
   -webkit-animation: rotatePlane 1.2s infinite ease-in-out;
@@ -201,39 +213,81 @@ border-color:#4b54d1 #4b54d1 #4b54d1 #4b54d1;
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
 }
+.header {
+  overflow: hidden;
+  background-color: #13161a;
+  padding: 0px 3px;
+}
+#span:hover {
+  background-color: transparent;
+}
+.header a {
+  float: left;
+  color: white;
+  height: 55px;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  transition: background 0.5s;
+  line-height: 25px;
+}
+.header a:hover {
+  background-color: #262e3a;
+  color: white;
+  height: 55px;
+  transition: 0.5s;
+}
+
+.header a.active {
+  float: left;
+  margin-left: -12px;
+  width: 90px;
+  transition: 0.2s;
+  color: white;
+}
+
+.header-right {
+  float: left;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
 </style>
-<span id="span"></span>
 </head>
 <body>
+  <div class="header">
+    <div class="header-right">
+      <a class="active" href="main.html"><svg style="margin-left: 5px;margin-top: 4px;fill:#FCFCFC;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 6.453l9 8.375v9.172h-6v-6h-6v6h-6v-9.172l9-8.375zm12 5.695l-12-11.148-12 11.133 1.361 1.465 10.639-9.868 10.639 9.883 1.361-1.465z"/></svg></a>
+      <a href="calculator.html"><svg style="margin-left: 30px;margin-top: 4px;fill:#979797;width: 55px;" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24.012 20h-20v-2h20v2zm-2.347-5.217c-.819 1.083-2.444 1.284-3.803 1.2-1.142-.072-10.761-1.822-11.186-1.939-1.917-.533-3.314-1.351-4.276-2.248-.994-.927-1.557-1.902-1.676-2.798l-.724-4.998 3.952.782 2.048 2.763 1.886.386-1.344-4.931 4.667 1.095 4.44 5.393 2.162.51c1.189.272 2.216.653 3.181 1.571.957.911 1.49 2.136.673 3.214zm-3.498-2.622c-.436-.15-3.221-.781-3.717-.892l-4.45-5.409-.682-.164 1.481 4.856-5.756-1.193-2.054-2.773-.772-.19.486 2.299c.403 1.712 2.995 3.155 4.575 3.439 1.06.192 8.89 1.612 9.959 1.773.735.105 2.277.214 2.805-.302l.003-.002c-.268-.652-1.214-1.213-1.878-1.442z"/></svg></a>
+      <a href="checklist.html"><svg style="margin-left: 2px;margin-top: 4px;fill:#979797;width: 55px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z"/></svg></a>
+    </div>
+    <a id="span"></a>
+  </div>
+
   <div id="preloader">
 	  <div class="preloader-plane"></div>
 	  <div class="loader-section section-left"></div>
 	  <div class="loader-section section-right"></div>
 </div>
-    <form style="color: white;font-family: 'Lato';margin-left: 25%;">
-        <br>Flight Level<br>
-        FL
-        <input id="num1" placeholder="380" style="font-family: 'Lato';" type="number" name="num1" maxlength="3" oninput="maxLengthCheck(this)" />
-        <br>
-        <br>Target Flight Level<br>
-        FL
-        <input placeholder="070" style="font-family: 'Lato';" id="num2" maxlength="3" oninput="maxLengthCheck(this)" type="number" name="num2" />
-        <br>
-        <br>Vertical speed<br>
-        -<input placeholder="3000" style="margin-left: 15px;font-family: 'Lato';" id="num3" maxlength="4" oninput="maxLengthCheck(this)" type="number" name="num3"/>&nbsp FPM
-        <br><br>
-        <button style="margin-left: 60px;" type="button" class="btn second" value="Calculate" onclick="doMath()"><svg style="filL: #f5f5f5;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.131 24c-.124-.621-.273-1.258-.447-1.841-1.019-3.401-2.688-3.461-2.684-6.494.007-3.556.008-6.055 0-8.455-.003-.824.566-1.26 1.127-1.26.489 0 .973.332 1.067 1.026.38 2.792.877 6.04 1.083 6.715.294.964 1.664.452 1.105-.461-.39-.636-.926-2.198-1.146-3.555 3.756 2.461 4.35 2.074 3.859 5.911-.244 1.912-.426 4.173.904 6.775l-4.868 1.639zm-16.131-21v5h11v-5h-11zm8 15h3v-5h-3v5zm4.499 2.186c-.246-.363-.502-.747-.733-1.186h-12.766v-17h13v2.807c.541-.512 1.257-.812 2-.844v-3.963h-17v21h16.017c-.167-.285-.34-.551-.518-.814zm-5.499-7.186h-3v2h3v-2zm1-1h3v-2h-3v2zm-5-2h-3v2h3v-2zm-3 8h3v-2h-3v2zm3-5h-3v2h3v-2zm1 5h3v-2h-3v2zm3-8h-3v2h3v-2z"/></svg></button>
-      </form>
-      <p id="text" style="position: static;z-index:0;color: #FCFCFC; font-family: 'Lato';top: 30px;margin-left: 15px;max-width: 100%;" class="text"></p>
       <footer class="social-footer">
         <div class="social-footer-left">
         </div>
         <div class="social-footer-icons">
           <ul class="menu simple">
-            <li><a target="_blank" href="https://github.com/prncAzula/NeckoTool/"> <svg class="github" style="position:fixed;width:100%;transition: filter 0.5s;position:absolute;fill: #30363D;width:35px;height:35px;margin-left: -180px;margin-top: 180px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a></li>
+            <li><a target="_blank" href="https://github.com/prncAzula/NeckoTool/"> <svg class="github" style="position:fixed;justify-content:center;width:100%;transition: filter 0.5s;position:absolute;fill: #30363D;width:35px;height:35px;margin-left: -502px;margin-top: 180px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a></li>
           </ul>
         </div>
-         
+         <p style="color: white;font-size: 80px;margin-left: 410px;position: absolute;margin-top: 600px;font-weight: 700;">Welcome!</p>
         <script
         src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
@@ -248,8 +302,6 @@ function doMath() {
   var theProduct3 = theProduct1 / theProduct2;
   document.getElementById('text').textContent =  'The descent shall start ' + Math.ceil(theProduct3) + ' NM from your waypoint of target.';
 }
-
-
 var span = document.getElementById('span');
 
 function time() {
@@ -258,7 +310,7 @@ function time() {
   var m = d.getUTCMinutes();
   var h = d.getUTCHours();
   span.textContent = 
-    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2) + ' UTC';
 }
 setInterval(time, 1000);
 
@@ -266,7 +318,7 @@ setInterval(time, 1000);
   "use strict";
 setTimeout(function() {
     	$('body').addClass('loaded');
-	}, 3500);
+	}, 500);
 })(jQuery);
 
 function maxLengthCheck(object){
