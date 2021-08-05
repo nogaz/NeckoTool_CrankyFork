@@ -11,8 +11,8 @@ let mainWindow
 function createWindow () {
 
   const mainWindow = new BrowserWindow({
-    width: 400,
-    height: 600,
+    width: 1220,
+    height: 740,
     icon: path.join(__dirname, '/icon.ico'),
     fullscreenable: false,
     resizable: false,
