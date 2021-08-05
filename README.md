@@ -1,6 +1,10 @@
 # Necko Aviation Tool
 this is a tool for your flightsimulator to calculate the top of descent or do more (coming soon) (t/od) 
 
+# Download 
+
+Download the latest release [here](https://github.com/prncAzula/NeckoTool/releases/tag/v1.0.1_PUBLIC)
+
 ## How to use 
 
 simply open the NeckoTool.exe and head over to the landing plane icon.
