@@ -16,9 +16,4 @@ simply open the NeckoTool.exe and head over to the landing plane icon.
 
 
 # Note
-please take note that the tool is primary made for windows and not for linux etc. use it on own risk.
-
-### Inspiration I got 
-**[preloader](https://zhuanlan.zhihu.com/p/350607485)**
-**<br>[colors](https://www.zhihu.com/question/33549908)**
-**<br>[fonts](https://www.fonts.net.cn/articles-0-1.html)**
+Please note that the tool was primarily developed for Windows.
