@@ -12,7 +12,8 @@ The changelog can be found [here!](https://github.com/prncAzula/NeckoTool/releas
 simply open the NeckoTool.exe and head over to the landing plane icon.
 <br>
 <br>
-![image](https://user-images.githubusercontent.com/69110466/128404191-e7038a6b-64b1-444c-9447-d93e61718397.png)
+![image](https://user-images.githubusercontent.com/69110466/132101360-0211ebea-c90a-4111-af5c-fbcebef39dac.png)
+
 
 
 # Note
