@@ -1,5 +1,5 @@
 # Necko Aviation Tool
-this is a tool for your flightsimulator to calculate the top of descent or do more (coming soon) (t/od) 
+this is a tool for your flightsimulator to calculate the top of descent (t/od) 
 
 # Download 
 
