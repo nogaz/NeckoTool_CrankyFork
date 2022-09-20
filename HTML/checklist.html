@@ -293,19 +293,6 @@ li {
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
         crossorigin="anonymous"></script>
     <script>
-function doMath() {
-  var numOne = document.getElementById('num1').value;
-  var numTwo = document.getElementById('num2').value;
-  var numThree = document.getElementById('num3').value;
-  var theProduct1 = parseInt(numOne) - parseInt(numTwo);
-  var theProduct2 = parseInt(numThree) / 1000;
-  var theProduct3 = theProduct1 / theProduct2;
-  document.getElementById('text').textContent =  'The descent shall start ' + Math.ceil(theProduct3) + ' NM from your waypoint of target.';
-}
-
-
-var span = document.getElementById('span');
-
 function time() {
   var d = new Date();
   var s = d.getUTCSeconds();
